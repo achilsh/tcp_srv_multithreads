@@ -1,6 +1,8 @@
 /**
  * @file: t_threads.hpp
- * @brief: 
+ * @brief: 线程的封装
+*   线程类的抽象，该类对外支持: 启动线程，停止线程，join线程，获取当前线程id等能力
+*   如果要使用线程完成具体工作,只需继承该类即可,实现方法main(), Init().
  * @author:  wusheng Hu
  * @version: v0x0001
  * @date: 2018-04-18
@@ -23,12 +25,6 @@
 namespace T_TCP
 {
 
-
-/**
-* @brief: 
-* 线程类的抽象，该类对外支持: 启动线程，停止线程，join线程，获取当前线程id等能力
-* 如果要使用线程完成具体工作,只需继承该类即可,实现方法main(), Init().
-*/
 class PthreadBase
 {
     public:

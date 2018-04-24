@@ -1,6 +1,8 @@
 /**
  * @file: t_proto.hpp
- * @brief: 
+ * @brief:  
+ *       提供简单编解码的接口，如果存在多种协议，可以进一步把接口全部virtual,
+ *       业务统一使用virtual 接口，新增协议只要分配注册新实例。
  * @author:  wusheng Hu
  * @version: v0x0001
  * @date: 2018-04-24

@@ -1,3 +1,12 @@
+/**
+ * @file: t_main.cpp
+ * @brief: 
+ *       tcp 服务的入口
+ * @author:  wusheng Hu
+ * @version: v0x0001
+ * @date: 2018-04-24
+ */
+
 #include <iostream>
 #include <stdlib.h>
 

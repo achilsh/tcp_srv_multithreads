@@ -1,6 +1,6 @@
 /**
  * @file: t_pools.hpp
- * @brief: 线程池容器实现文件.
+ * @brief: 线程池容器实现文件. 内部提供收集所有线程就绪的接口。
  * @author:  wusheng Hu
  * @version: v0x0001
  * @date: 2018-04-22

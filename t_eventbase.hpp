@@ -1,6 +1,9 @@
 /**
  * @file: t_eventbase.hpp
- * @brief: 
+ * @brief:  
+ *      "tcp 使用连接的抽象" 的实现文件，主要包括连接使用的文件句柄，
+ *      进行网络事件的操作接口.
+ *      所有连接都会继承该基类。
  * @author:  wusheng Hu
  * @version: 
  * @date: 2018-04-23

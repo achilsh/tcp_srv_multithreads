@@ -1,6 +1,10 @@
 /**
  * @file: t_client.hpp
- * @brief: 
+ * @brief:
+ *      tcp client 实现文件，采用多线程connect & send/recv 数据
+ *      每个线程去connect tcp server. 每个线程内可重复发送多次。
+ *      线程数和收发次数 参数化输入
+ *         
  * @author:  wusheng Hu
  * @version: v0x0001
  * @date: 2018-04-19
@@ -40,6 +44,11 @@ using namespace std;
 
 namespace T_CLIENT 
 {
+
+    /**
+     * @brief: 一个客户端实现，其实也是一个线程的实现
+     *    包括常规的connect, recv/send 接口的实现
+     */
     class TestOneClient: public PthreadBase
     {
         public:
@@ -58,6 +67,10 @@ namespace T_CLIENT
     };
 
     //////////////////////////
+    /**
+     * @brief: 
+     *    包括命令解析和多个client 实例的创建和启动。
+     */
     class TestClient 
     {
         public:
